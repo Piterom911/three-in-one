@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "./header.module.css";
 
 type TNavs = {
   link: string;
@@ -31,17 +32,35 @@ const navs: Array<TNavs> = [
 
 function Header() {
   return (
-    <nav>
-      <ul>
-        {navs.map(({ link, name }) => {
-          return (
-            <li key={link}>
-              <Link href={link}>{name}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
+    <header className={`${styles.header}`}>
+      <nav className={`container ${styles.nav}`}>
+        <Link className={`${styles.logo}`} href="/">
+          <svg
+            aria-label="Vercel logomark"
+            height="22"
+            role="img"
+            contentStyleType="width:auto;overflow:visible"
+            // style="width:auto;overflow:visible"
+            viewBox="0 0 74 64"
+          >
+            <path
+              d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z"
+              fill="var(--geist-foreground)"
+            ></path>
+          </svg>
+          <span>MyApp</span>
+        </Link>
+        <ul className={styles.navigationList}>
+          {navs.map(({ link, name }) => {
+            return (
+              <li key={link}>
+                <Link href={link}>{name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </header>
   );
 }
 

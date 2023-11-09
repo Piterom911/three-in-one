@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
 
-        {children}
+        <main className="container">{children}</main>
 
         <Footer
           creator="Dogodadev.me"

@@ -8,13 +8,13 @@ type TProps = {
 
 function Footer({ children, creator, addInfo }: TProps) {
   return (
-    <div>
+    <footer className="container">
       <h6>
         {children}
         <p>{creator}</p>
         <span>{addInfo}</span>
       </h6>
-    </div>
+    </footer>
   );
 }
 
