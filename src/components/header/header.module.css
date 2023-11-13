@@ -1,7 +1,8 @@
 .header {
   padding: 40px 0;
-  background-color: rgb(244, 244, 238);
+  background-color: #060606;
   margin-bottom: 100px;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.5);
 }
 
 .nav {
@@ -41,7 +42,7 @@
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: #000000;
+  background-color: #ffffff;
   transition: all 0.3s;
 }
 
