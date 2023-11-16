@@ -1,3 +1,7 @@
+:root {
+  --accent-color: rgba(255, 0, 0, 0.3);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
