@@ -36,6 +36,7 @@ function Header() {
       <nav className={`container ${styles.nav}`}>
         <Link className={`${styles.logo}`} href="/">
           <svg
+            className={styles.logoIcon}
             aria-label="Vercel logomark"
             height="22"
             role="img"

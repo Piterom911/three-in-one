@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navItem:hover {
+  box-shadow: 0 0 9px 5px var(--accent-color),
+    inset 0 9px 5px var(--accent-color);
+}
+
+.navItem:hover .icon {
+  opacity: 0.6;
+}
+
+.navItem img {
+  display: block;
+}
+
+.icon {
+  filter: grayscale(1);
+}
