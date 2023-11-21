@@ -1,3 +1,4 @@
+import Button from "@/components/Button/Button";
 import styles from "./page.module.css";
 import Image from "next/image";
 
@@ -11,6 +12,9 @@ export default function Home() {
           Seamless Learning and Mastery. Dive into Next.js with Confidence,
           Supported by In-Depth Resources and Interactive Tutorials
         </p>
+        <Button link="/portfolio" bordered>
+          See our Works
+        </Button>
       </div>
       <Image
         className={styles.image}
